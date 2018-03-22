@@ -316,7 +316,7 @@ public class CouponSystemApplicationTests {
 		// Getting all purchased Coupons
 		try {
 			ArrayList<Coupon> allCustomerCoupons = customerFacade.getAllPurchasedCoupons();
-			Assert.notEmpty(allCustomerCoupons, "Array List of Coupons is empty ");
+			Assert.notEmpty(allCustomerCoupons, "Array List of Coupons is empty - never purchased ");
 		} catch (CustomerNotFoundException | CouponsNotFoundException e) {
 			System.out.println(e.getMessage());
 		}
